@@ -33,11 +33,11 @@ int main()
     int size_arr = sizeof(arr)/sizeof(int);
 
     int index_1 = binarySearchIteration(arr,key_1,size_arr);          //simulating when key is present
-    if(index_1!=-1) cout<<"Key : 54 Index : "<<index_1<<endl;
+    if(index_1!=-1) cout<<"Key : "<<key_1<<" Index : "<<index_1<<endl;
     else cout<<"Key not found"<<endl;
 
     int index_2 = binarySearchIteration(arr,key_2,size_arr);          //simulating when is is not present
-    if(index_2!=-1) cout<<"Key : 10 Index : "<<index_1<<endl;
+    if(index_2!=-1) cout<<"Key : "<<key_2<<" Index : "<<index_2<<endl;
     else cout<<"Key not found"<<endl;
 
     return 0;
