@@ -44,5 +44,5 @@ int main()
     cout<<"After inserting the element"<<endl;
     printArray();
 
-	return 0;
+    return 0;
 }

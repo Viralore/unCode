@@ -33,5 +33,5 @@ int main()
     if(idx!=-1) cout<<"Index of the key : "<<key<<" is "<<idx<<endl;
     else cout<<"Key : "<<key<<" not found"<<endl;
 
-	return 0;
+    return 0;
 }
