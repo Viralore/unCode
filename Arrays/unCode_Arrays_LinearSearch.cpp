@@ -1,5 +1,10 @@
 //Program for searching linearly in an array
 
+//Time Complexity of Linear Search
+//Worst Case    Average Case    Best Case
+//O(N)            O(N)            O(1)
+//Space Complexity of Linear Search is O(1)
+
 #include<bits/stdc++.h>
 using namespace std;
 

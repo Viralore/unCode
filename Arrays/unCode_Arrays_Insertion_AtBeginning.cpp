@@ -1,5 +1,9 @@
 //Program for inserting the elements at the beginning of the Array
 
+//Time Complexity of Bubble Sort
+//Worst Case    Average Case    Best Case
+//O(N)             O(N)           O(1)
+
 #include<bits/stdc++.h>
 using namespace std;
 

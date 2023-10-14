@@ -1,5 +1,10 @@
-//Program for Searching int the array using Binary Search using Recursion
+//Program for Searching in the array using Binary Search using Recursion
 //For using binary search array should be sorted
+
+//Time Complexity of Binary Search
+//Worst Case    Average Case    Best Case
+//O(log(N))       O(log(N))       O(1)
+//Space Complexity of Binary Search is O(1)
 
 #include<bits/stdc++.h>
 using namespace std;
