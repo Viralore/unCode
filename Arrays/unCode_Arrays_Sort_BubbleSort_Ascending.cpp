@@ -52,11 +52,11 @@ int main()
     }
 
     cout<<"Array before sorting"<<endl;
-    printArray(arr,size_arr);                   //printing the array before sorting
+    printArray(arr,N);                   //printing the array before sorting
 
 
-    bubbleSortAscending(arr,size_arr);
+    bubbleSortAscending(arr,N);
     cout<<"Array after sorting"<<endl;          //printing the sorted array
-    printArray(arr,size_arr);
+    printArray(arr,N);
     return 0;
 }
