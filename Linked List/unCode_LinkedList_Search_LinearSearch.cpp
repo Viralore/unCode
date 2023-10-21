@@ -70,7 +70,7 @@ int main()
     cin>>N;                                                     //taking input for N
 
     cout<<endl<<"Please Enter the elements"<<endl;
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++)N
     {
         cout<<"Enter the element "<<(i+1)<<" : ";
         cin>>x;                                                 //taking elements
