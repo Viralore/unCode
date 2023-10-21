@@ -1,7 +1,8 @@
-//Program for insertion at last of linked list
+//Program for Linearly Searching in linked list
+//Also used insertion at last
 //We will use structure to create a linked list for this
 
-//Time Complexity of insertion at last
+//Time Complexity of iLinear Search
 //Worst Case    Average Case    Best Case
 //O(N)            O(N)            O(N)
 
@@ -49,6 +50,18 @@ Node *insertAtLast(Node *head,int x)
     return head;                    //returning head
 }
 
+bool linearSearchInList(Node *head,int x)
+{
+    if(head==nullptr) return false;         //if list empty then return false
+    Node *current = head;                   //using temp var to traverse the list
+    while(current!=nullptr)
+    {
+        if(current->data==x) return true;   //if found the element then return true
+        current = current->next;
+    }
+    return false;                           //if reach here then means we didn't find the element so return false
+}
+
 int main()
 {
     Node *head = nullptr;                                       //initialization of head pointer
@@ -64,8 +77,11 @@ int main()
         head = insertAtLast(head,x);                            //and inserting them at end of linked list
     }
 
-    cout<<endl<<"Printing all the Elements of Linked List"<<endl;
-    printLinkedList(head);                                      //printing the elements
+    cout<<"Enter a element to search : ";
+    cin>>x;
+
+    if(linearSearchInList(head,x)) cout<<"Element : "<<x<<" found in List"<<endl;
+    else cout<<"Element : "<<x<<" is not found in List"<<endl;;
 
     return 0;
 }
