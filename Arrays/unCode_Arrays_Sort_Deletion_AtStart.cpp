@@ -1,10 +1,10 @@
-//Program for Linearly Searching in linked list
+//Program for deletion at the start of linked list
 //Also used insertion at last
 //We will use structure to create a linked list for this
 
 //Time Complexity of Linear Search
 //Worst Case    Average Case    Best Case
-//O(N)            O(N)            O(N)
+//O(1)            O(1)            O(1)
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -50,16 +50,15 @@ Node *insertAtLast(Node *head,int x)
     return head;                    //returning head
 }
 
-bool linearSearchInList(Node *head,int x)
+//firstly created a temp var to store the node to be deleted
+//then assigning the 2nd node to the head pointer
+//deleting the temp var and return new head pointer
+Node *deleteAtStart(Node *head)
 {
-    if(head==nullptr) return false;         //if list empty then return false
-    Node *current = head;                   //using temp var to traverse the list
-    while(current!=nullptr)
-    {
-        if(current->data==x) return true;   //if found the element then return true
-        current = current->next;
-    }
-    return false;                           //if reach here then means we didn't find the element so return false
+    Node *temp = head;
+    head = head->next;
+    delete temp;
+    return head;
 }
 
 int main()
@@ -77,11 +76,13 @@ int main()
         head = insertAtLast(head,x);                            //and inserting them at end of linked list
     }
 
-    cout<<"Enter a element to search : ";
-    cin>>x;
+    cout<<"Array Before Deletion"<<endl;                        //printing before deletion
+    printLinkedList(head);
 
-    if(linearSearchInList(head,x)) cout<<"Element : "<<x<<" found in List"<<endl;
-    else cout<<"Element : "<<x<<" is not found in List"<<endl;
+    cout<<"Deleting Element from start of Linked List"<<endl;   //deleting first element of linked list
+    head = deleteAtStart(head);
 
+    cout<<"Array After Deletion"<<endl;
+    printLinkedList(head);
     return 0;
 }
