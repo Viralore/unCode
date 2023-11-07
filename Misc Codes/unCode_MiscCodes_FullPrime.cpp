@@ -5,7 +5,7 @@
 //Worst Case    Average Case    Best Case
 //O(sqrt(N))     O(sqrt(N))     O(sqrt(N))
 
-//Time Complexity to check for prime
+//Time Complexity to check for Full Prime
 //Worst Case    Average Case    Best Case
 //O(N*sqrt(M))  O(N*sqrt(M))   O(N*sqrt(M))
 
