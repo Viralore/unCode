@@ -35,7 +35,7 @@ class Solution
 public:
     string customSortString(string order, string s)
     {
-        map<char,int> mp;
+        unordered_map<char,int> mp; // unordered_map is faster here
         for(char c : s)
             mp[c]++;
         string ans;
