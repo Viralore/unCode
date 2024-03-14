@@ -25,6 +25,7 @@ TreeNode *buildTree()
 
 void inorderTraversal(TreeNode* root)
 {
+    if(root==nullptr) return;
     stack<TreeNode*> s;
     TreeNode* current = root;
 
@@ -56,6 +57,7 @@ void inorderTraversal(TreeNode* root)
 
 int main()
 {
+    cout << "Enter the binary tree elements (preorder): ";
     TreeNode* root = buildTree();
     cout << "Inorder Traversal: ";
     inorderTraversal(root);
